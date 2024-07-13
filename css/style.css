@@ -8,23 +8,24 @@
 }
 
 /*en tête*/
+
+.container_bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 header {
-  position: sticky;
-  background-color: rgb(111, 192, 107);
+  background-color: #9cb079;
   width: 100%;
   top: 0px;
   display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.container_ban h1 {
-  display: flex;
+  padding: 20px;
 }
 
 .accueil {
   display: flex;
-  padding-top: 20px;
+  justify-content: flex-end;
+  padding-top: 10px;
 }
 
 .accueil a {
@@ -32,3 +33,11 @@ header {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.accueil a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+/*Fin de section entête*/
+
+/*Section Présentation*/
