@@ -3,19 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootcamp</title>
+    <title>Mon cv en html</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Nancy HANOYAN</h1>
+      <div class="container_bar">
+        <h1>Nancy HANOYAN</h1>
+      </div>
+      <div class="accueil">
+        <a href="#accueil">Accueil</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#formations">Formations</a>
+      </div>
     </header>
 
-    <section>
+    <section id="presentation">
       <div class="photo">
-        <img src="/assets/img/photo.jpg" alt="photo" />
+        <img src="/assets/img/photo.jpg" alt="" />
       </div>
-      <div class="presentation">
+      <div class="pres">
         <h2>Qui suis-je ?</h2>
         <p>
           Diplomé d'un BTS Comptabilité - Gestion, je me tourne actuellement
@@ -23,100 +31,80 @@
           de site internet.
         </p>
       </div>
+
+      <!--Contact-->
+      <div class="container">
+        <div class="contact">
+          <h2>Informations de contact</h2>
+          <div class="contact-flex">
+            <p>Nom :</p>
+            <p>Nancy HANOYAN</p>
+          </div>
+          <div class="contact-flex">
+            <p>Adresse :</p>
+            <p>1 rue Vendôme - 13500 MARTIGUES</p>
+          </div>
+          <div class="contact-flex">
+            <p>Téléphone :</p>
+            <p>06 16 51 41 74</p>
+          </div>
+          <div class="contact-flex">
+            <p>Mail :</p>
+            <a href="mailto">nancy.hanoyan@free.fr</a>
+          </div>
+          <div class="contact-flex">
+            <p>Permis :</p>
+            <p>B</p>
+          </div>
+          <div class="social">
+            <a href="#"><img src="/assets/img/fb.png" alt="logo fb" /></a>
+            <a href="#"><img src="/assets/img/insta.jpg" alt="logo insta" /></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!--Contact-->
-    <section class="contact">
-      <h2>Informations de contact</h2>
-      <div class="contact-flex">
-        <p>Nom :</p>
-        <p>Nancy HANOYAN</p>
+    <section id experiences>
+      <!--Contenu de la page-->
+      <div>
+        <h2>Expériences professionnelles</h2>
+        <ul>
+          <li>
+            Régisseur suppléant depuis 2017 - Mairie de Martigues - Service
+            Espace Enfance Famille
+          </li>
+          <li>
+            Secrétaire comptable de 2003 à 2017 - Mairie de Martigues - Service
+            Achats
+          </li>
+          <li>
+            Différents services de la commune de 1997 à 2003 - Mairie de
+            Martigues - Service Achats
+          </li>
+        </ul>
       </div>
-      <div class="contact-flex">
-        <p>Adresse :</p>
-        <p>1 rue Vendôme - 13500 MARTIGUES</p>
-      </div>
-      <div class="contact-flex">
-        <p>Téléphone :</p>
-        <p>06 16 51 41 74</p>
-      </div>
-      <div class="contact-flex">
-        <p>Mail :</p>
-        <p>nancy.hanoyan@free.fr</p>
-      </div>
-      <div class="contact-flex">
-        <p>Permis :</p>
-        <p>B</p>
-      </div>
-      <div class="social">
-        <a href="#"><img src="/assets/img/fb.png" alt="logo fb" /></a>
-        <a href="#"><img src="/assets/img/insta.jpg" alt="logo insta" /></a>
-      </div>
-    </section>
-
-    <!-- <section class="list">
-      <ul>
-        <li>
-          <a href="#experiencesprofessionnelles"
-            >Expériences professionnelles</a
-          >
-        </li>
-        <li>
-          <a href="#formations">Formations</a>
-        </li>
-        <li>
-          <a href="#logiciels_utilises">Logiciels utilisés</a>
-        </li>
-        <li>
-          <a href="#loisirs">Loisirs</a>
-        </li>
-      </ul>
-    </section> -->
-
-    <!--Contenu de la page-->
-    <section id="experiences">
-      <h2>Expériences professionnelles</h2>
-      <li>
-        Régisseur suppléant depuis 2017 - Mairie de Martigues - Service Espace
-        Enfance Famille
-      </li>
-      <li>
-        Secrétaire comptable de 2003 à 2017 - Mairie de Martigues - Service
-        Achats
-      </li>
-      <li>
-        Différents services de la commune de 1997 à 2003 - Mairie de Martigues -
-        Service Achats
-      </li>
     </section>
     <section id="formations">
-      <h2>Formations</h2>
-      <li>Développeur web et web mobile - en cours de formation</li>
-      <li>Comptabilité - Gestion - 1994 à 1997</li>
+      <div>
+        <h2>Formations</h2>
+        <ul>
+          <li>Développeur web et web mobile - en cours de formation</li>
+          <li>Comptabilité - Gestion - 1994 à 1997</li>
+        </ul>
+      </div>
     </section>
-    <section id="logiciels_utilises">
-      <h2>Logiciels utilisés</h2>
-      <li>
-        Word, Excel, Powerpoint, Filemaker Pro, Cégid, Atal, Maélis web et
-        serveur, Visualstudio
-      </li>
-      <li>Brother PE Design, Inkscape, Canvas workspace</li>
-    </section>
-    <section id="loisirs">
+    <section id=""></section>
+    <div id="loisirs">
       <h2>Loisirs</h2>
-      <li>Broderie machine, tricot, crochet, couture</li>
-      <li>Informatique, web</li>
-    </section>
+      <ul>
+        <li>Broderie machine, tricot, crochet, couture</li>
+        <li>Informatique, web</li>
+      </ul>
+    </div>
 
     <!--Pied de page-->
     <footer>
-      <div id="mentions">
-        Mentions légales
-        <a
-          href="/mentions legales/Mentions Légales - cv nancy -
-        2024-07-01T15_03_17Z.pdf"
-        ></a>
-      </div>
+      <div id="mentions">Mentions légales</div>
       <div id="copyright">Copyright #2024</div>
     </footer>
   </body>

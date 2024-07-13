@@ -7,65 +7,28 @@
   text-decoration: none;
 }
 
+/*en tête*/
 header {
+  position: sticky;
+  background-color: rgb(111, 192, 107);
   width: 100%;
-  padding: 40px 0px;
-  box-shadow: 0px 0px 20px #000000;
-  background-color: #519944;
-}
-
-h1 {
-  margin-left: 20px;
+  top: 0px;
   display: flex;
-  justify-content: start;
-  text-align: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-p {
-  font-size: 1em;
-}
-
-a {
-  color: #101010;
-}
-
-.photo {
-  text-align: center;
-}
-
-.photo img {
-  margin-top: -20px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-li {
-  margin-left: 20px;
-}
-
-.contact {
-  margin-left: 20px;
-  font-size: 16px;
-}
-
-#experiences,
-#formations,
-#logiciels_utilises,
-#loisirs {
-  font-size: 16px;
-  margin-bottom: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#experiences li {
+.container_ban h1 {
   display: flex;
-  justify-content: space-between;
 }
 
-footer {
+.accueil {
   display: flex;
-  justify-content: space-around;
-  font-size: 18px;
+  padding-top: 20px;
+}
+
+.accueil a {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
 }
