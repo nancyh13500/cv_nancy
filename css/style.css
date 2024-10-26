@@ -22,6 +22,11 @@ header {
   padding: 20px;
 }
 
+.name {
+  color: black;
+  background-color: #9cb079;
+}
+
 .accueil {
   display: flex;
   justify-content: flex-end;
@@ -35,13 +40,14 @@ header {
 }
 
 .accueil a:hover {
-  color: white;
+  color: white; 
   border-bottom: 2px solid white;
+
 }
 /*Fin de section entête*/
 
 /*section img_present*/
-#img_present {
+.img_present {
   width: 100%;
 }
 
