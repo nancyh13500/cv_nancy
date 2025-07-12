@@ -57,6 +57,14 @@ h1 {
 
 /*end presentation*/
 
+/*navbar*/
+
+.logo-navbar {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+}
+
 /*Section hero*/
 
 .hero-section {
@@ -74,7 +82,7 @@ h1 {
 .projects {
   font-size: 30px;
   min-width: 100%;
-  height: 500px;
+  height: 300px;
 }
 
 .projects .card {
@@ -102,7 +110,7 @@ h1 {
 }
 
 .projects .card-img-top {
-  width: 80%;
+  width: 70%;
 }
 
 
