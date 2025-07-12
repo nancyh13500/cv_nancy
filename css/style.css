@@ -57,6 +57,19 @@ h1 {
 
 /*end presentation*/
 
+/*Section hero*/
+
+.hero-section {
+  min-height: 650px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: url('../assets/img/workspace.jpg') center/cover;
+  color: white;
+  padding-top: 100px;
+}
+
+
 /*projets*/
 .projects {
   font-size: 30px;
@@ -64,10 +77,33 @@ h1 {
   height: 500px;
 }
 
-.my_projects {
-  text-align: center;
+.projects .card {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.projects .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px white;
+}
+
+.projects .card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.projects .card-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.projects .card-img-top {
+  width: 80%;
+}
 
 
 /*footer*/
