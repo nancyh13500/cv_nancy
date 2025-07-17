@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
       label: 'JAVASCRIPT',
     },
     {
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+      label: 'PHP',
+    },
+    {
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
       label: 'BOOTSTRAP',
     },
@@ -21,10 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
       label: 'SQL',
     },
-    {
-      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-      label: 'PHP',
-    }
   ];
 
   const carousel = document.querySelector('.skills-carousel');
