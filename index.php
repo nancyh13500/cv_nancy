@@ -2,14 +2,31 @@
 require_once __DIR__ . '/header.php';
 ?>
 
+
 <!-- Hero Section -->
 <header class="hero-section">
   <div class="container">
     <h1 class="name display-4 fw-bold">Nancy HANOYAN</h1>
-    <p class="lead">Développeur web et web mobile full stack</p>
+    <h3 class="lead">Développeur web et web mobile full stack</h3>
     <a href="#projects" class="btn btn-projects btn-light mt-3">Découvrir mes projets</a>
   </div>
 </header>
+
+<!-- Section presentation -->
+<section class="presentation" id="presentation">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6"> <class="d-block mx-lg-auto img-fluid w-100 alt="" width="400" height="200" loading="lazy"> </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="/cv/cv nancy.pdf" type="button" class="btn bg-dark text-white btn-lg px-4 me-md-2" target="_blank">Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
+
+</section>
 
 <!-- Projets -->
 <section id="projects" class="projects py-5 bg-dark text-white">
@@ -51,14 +68,14 @@ require_once __DIR__ . '/header.php';
 </section>
 
 <!-- Compétences -->
-<section id="skills" class="py-5 bg-white">
+<section id="skills" class="skills py-5 bg-white">
   <div class="container">
     <h2 class="text-center mb-5">Mes compétences</h2>
     <div class="skills-carousel-container">
       <div class="d-flex align-items-center justify-content-center w-100">
-        <button id="skills-prev" class="skills-carousel-btn me-2 bg-dark" aria-label="Précédent">&lt;</button>
+        <button id="skills-prev" class="skills-carousel-btn bg-dark" aria-label="Précédent">&lt;</button>
         <div class="skills-carousel"></div>
-        <button id="skills-next" class="skills-carousel-btn ms-2 bg-dark" aria-label="Suivant">&gt;</button>
+        <button id="skills-next" class="skills-carousel-btn bg-dark" aria-label="Suivant">&gt;</button>
       </div>
     </div>
   </div>

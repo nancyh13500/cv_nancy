@@ -2,9 +2,9 @@
     <footer>
         <div class="container-fluid py-4 bg-dark text-white">
             <div class="d-flex flex-column align-items-center mt-2 mb-2">
-                <p class="mb-2">Nancy HANOYAN</p>
-                <p class="mb-2">nancy.hanoyan@free.fr</p>
-                <p>06 16 51 41 74</p>
+                <p class="name mb-2">Nancy HANOYAN</p>
+                <p class="mail mb-2"><i class="bi bi-envelope"></i> nancy.hanoyan@free.fr</p>
+                <p class="phone mb-2"><i class="bi bi-telephone"></i> 06 16 51 41 74</p>
             </div>
         </div>
     </footer>
