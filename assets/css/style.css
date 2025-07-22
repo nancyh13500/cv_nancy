@@ -173,13 +173,13 @@ footer {
   background-color: dark;
 }
 
-.name {
-  position: absolute;
+.name-footer {
+  font-size: 1.25rem;
   top: 25px;
 }
 
 .mail {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .phone {
