@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed pt-3 pb-3">
         <div class="container">
-            <a class="navbar-brand d-flex ms-3" href="/index.html">
+            <a class="navbar-brand d-flex ms-3" href="/index.php">
                 <img src="assets/img/logo nh.jpg" alt="Logo NH" class="logo-navbar">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -23,14 +23,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#header">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="#presentation">Qui suis-je ?</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Mes projets</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Mes compétences</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="cv">
-                <a href="cv/cv nancy.pdf" class="btn btn-light" target="_blank">Télécharger mon CV</a>
-            </div>
+
         </div>
     </nav>

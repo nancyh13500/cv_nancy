@@ -27,6 +27,10 @@ nav {
   z-index: 5;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
 .logo-navbar {
   height: 40px;
   width: auto;
@@ -35,7 +39,7 @@ nav {
 /*Section hero*/
 
 .hero-section {
-  min-height: 800px;
+  min-height: 500px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -65,7 +69,8 @@ nav {
 }
 
 .lead {
-  margin-top: 250px;
+  margin-top: 180px;
+  font-size: 1.75rem;
 }
 
 .btn-projects {
@@ -289,6 +294,10 @@ footer {
     gap: 1rem;
   }
 
+  .hero-section {
+    min-height: 915px;
+  }
+
   .skills-carousel-item {
     min-width: 100px;
     max-width: 120px;
@@ -328,10 +337,11 @@ footer {
   .hero-section .lead {
     font-size: 1.1rem;
     margin-top: 1.25rem;
-    margin-left: 0;
+    margin-left: -20px;
   }
 
-  .btn-projects {
+  .btn-projects,
+  .btn-cv {
     font-size: 0.75rem;
     padding: 0.5rem 1.2rem;
     margin-left: 0;
@@ -347,5 +357,11 @@ footer {
   .contact p,
   .footer p {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .hero-section {
+    min-height: 915px;
   }
 }

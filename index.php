@@ -4,11 +4,15 @@ require_once __DIR__ . '/header.php';
 
 
 <!-- Hero Section -->
-<header class="hero-section">
+<header id="header" class="hero-section">
   <div class="container">
     <h1 class="name display-4 fw-bold">Nancy HANOYAN</h1>
     <h3 class="lead">Développeur web et web mobile full stack</h3>
     <a href="#projects" class="btn btn-projects btn-light mt-3">Découvrir mes projets</a>
+    <div class="cv mt-4">
+      <a href="cv/cv nancy.pdf" class="btn btn-cv btn-light" target="_blank">Télécharger mon CV</a>
+    </div>
+
   </div>
 </header>
 
@@ -18,8 +22,9 @@ require_once __DIR__ . '/header.php';
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6"> <class="d-block mx-lg-auto img-fluid w-100 alt="" width="400" height="200" loading="lazy"> </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A propos de moi</h1>
+        <p class="lead">En reconversion professionnelle de développeur web et web mobile, vous trouverez les projets que j'ai fait durant cette formation.
+          Projets auxquels j'ai appris ce métier passionnant et complet.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a href="/cv/cv nancy.pdf" type="button" class="btn bg-dark text-white btn-lg px-4 me-md-2" target="_blank">Télécharger mon CV</a>
         </div>
@@ -33,16 +38,6 @@ require_once __DIR__ . '/header.php';
   <div class="projects container">
     <h2 class="text-center mb-5">Mes projets</h2>
     <div class="row g-4 justify-content-center ms-1 me-1">
-      <div class="col-md-4">
-        <a href="http://127.0.0.1:5500/" target="_blank" class="text-decoration-none">
-          <div class="card h-100 text-center">
-            <img class="card-img-top mx-auto mt-3" alt="Asso_tricot">
-            <div class="card-body">
-              <p class="card-text">Apprendre à tricoter pour les tout petits.</p>
-            </div>
-          </div>
-        </a>
-      </div>
       <div class="col-md-4">
         <a href="http://127.0.0.1:5501/index.html" target="_blank" class="text-decoration-none">
           <div class="card h-100 text-center">
@@ -58,7 +53,7 @@ require_once __DIR__ . '/header.php';
           <div class="card h-100 text-center">
             <img src="assets/img/logo-checkit.png" class="card-img-top mx-auto mt-3" alt="Checkit">
             <div class="card-body">
-              <p class="card-text">Gérer vos listes à faire</p>
+              <p class="card-text">Gérer vos "To do list"</p>
             </div>
           </div>
         </a>
