@@ -38,6 +38,8 @@ nav {
   border-radius: 10%;
 }
 
+/*end section navbar */
+
 /*Section hero*/
 
 .hero-section {
@@ -78,6 +80,8 @@ nav {
 .btn-projects {
   margin-top: 300px;
 }
+
+/*end section hero*/
 
 /*presentation*/
 #presentation {
@@ -154,7 +158,7 @@ nav {
 }
 
 #projets:target {
-  padding-top: 0px;
+  padding-top: -60px;
 }
 
 .projects .card {
@@ -184,6 +188,8 @@ nav {
 .projects .card-img-top {
   width: 70%;
 }
+
+/*end section projects*/
 
 /*section compétences*/
 
@@ -238,13 +244,15 @@ nav {
   justify-content: center;
   cursor: pointer;
   margin: 0 0.5rem;
-  transition: background 0.2s;
+  transition: 0.2s;
 }
 
 .skills-carousel-btn:disabled {
   background: #aaa;
   cursor: not-allowed;
 }
+
+/* end section compétences*/
 
 /*footer*/
 footer {
@@ -275,6 +283,8 @@ footer {
   top: 0;
   z-index: 1030;
 }
+
+/*end section footer*/
 
 /*responsive*/
 @media screen and (max-width: 768px) {

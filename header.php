@@ -13,10 +13,10 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed pt-3 pb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 pb-3">
         <div class="container">
             <a class="navbar-brand d-flex ms-3" href="/index.php">
-                <img src="assets/img/logo nh.jpg" alt="Logo NH" class="logo-navbar">
+                <img src="assets/img/logo nh bg white.jpg" alt="Logo NH" class="logo-navbar">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
