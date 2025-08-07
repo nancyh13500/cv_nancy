@@ -18,7 +18,7 @@
 
 nav {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,6 +34,8 @@ nav {
 .logo-navbar {
   height: 40px;
   width: auto;
+  margin-right: 8px;
+  border-radius: 10%;
 }
 
 /*Section hero*/
@@ -69,13 +71,80 @@ nav {
 }
 
 .lead {
-  margin-top: 180px;
+  margin-top: 350px;
   font-size: 1.75rem;
 }
 
 .btn-projects {
   margin-top: 300px;
 }
+
+/*presentation*/
+#presentation {
+  position: relative;
+}
+
+.presentation {
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation .button {
+  position: absolute;
+  border-radius: 30px;
+  padding-left: 130px;
+  padding-top: 340px;
+}
+
+.nom {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  padding-left: 130px;
+  padding-top: 150px;
+}
+
+.text_presentation {
+  z-index: 1;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.presentation p {
+  font-size: 1.2rem;
+}
+
+.responsive-img {
+  min-width: 100%;
+  max-height: 600px;
+  display: block;
+}
+
+.presentation .logo-nh {
+  max-width: 400px;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.logo-nh {
+  width: 75%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 768px) {
+  .logo-nh {
+    max-width: 80%;
+  }
+}
+
+/*end presentation*/
 
 /*projets*/
 .projects {
@@ -85,7 +154,7 @@ nav {
 }
 
 #projets:target {
-  padding-top: 120px;
+  padding-top: 0px;
 }
 
 .projects .card {
@@ -154,6 +223,10 @@ nav {
   display: flex;
 }
 
+.skills-carousel-item img {
+  margin-bottom: 0.5rem;
+}
+
 .skills-carousel-btn {
   color: #fff;
   border: none;
@@ -178,17 +251,22 @@ footer {
   background-color: dark;
 }
 
+.name {
+  position: absolute;
+  top: 25px;
+}
+
 .name-footer {
   font-size: 1.25rem;
   top: 25px;
 }
 
 .mail {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .phone {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 #mainNavbar {
@@ -295,7 +373,7 @@ footer {
   }
 
   .hero-section {
-    min-height: 915px;
+    min-height: 630px;
   }
 
   .skills-carousel-item {
@@ -336,7 +414,7 @@ footer {
 
   .hero-section .lead {
     font-size: 1.1rem;
-    margin-top: 1.25rem;
+    margin-top: 2.5rem;
     margin-left: -20px;
   }
 
