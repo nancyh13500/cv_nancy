@@ -23,7 +23,7 @@ require_once __DIR__ . '/header.php';
       <div class="col-md-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A propos de moi</h1>
         <p class="pt-5">En reconversion professionnelle de développeur web et web mobile, vous trouverez les projets que j'ai fait durant cette formation.
-          Projets auxquels j'ai appris ce métier passionnant et complet.</p>
+          Projets auxquels j'ai appris ce métier passionnant et complet. Je reste à votre disposition pour un éventuel projet à réaliser pour vous.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
           <a href="/cv/cv nancy.pdf" type="button" class="btn bg-dark text-white btn-lg px-4 me-md-2" target="_blank">Télécharger mon CV</a>
         </div>
