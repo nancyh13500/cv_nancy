@@ -1,0 +1,12 @@
+services:
+  web:
+    container_name: mon-portfolio-web
+    image: php:8.2-apache
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Paris
+    ports:
+      - 8010:80
+    volumes:
+      - ./:/var/www/html
+   

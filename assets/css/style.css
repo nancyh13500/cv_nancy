@@ -18,7 +18,7 @@
 
 nav {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,7 +34,53 @@ nav {
 .logo-navbar {
   height: 40px;
   width: auto;
+  margin-right: 8px;
 }
+
+/*Section presentation*/
+#presentation {
+  position: relative;
+}
+
+.presentation {
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation .button {
+  position: absolute;
+  border-radius: 30px;
+  padding-left: 130px;
+  padding-top: 340px;
+}
+
+.nom {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  padding-left: 130px;
+  padding-top: 150px;
+}
+
+.text_presentation {
+  z-index: 1;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.responsive-img {
+  min-width: 100%;
+  max-height: 600px;
+  display: block;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/*end presentation*/
 
 /*Section hero*/
 
@@ -85,7 +131,7 @@ nav {
 }
 
 #projets:target {
-  padding-top: 120px;
+  padding-top: 0px;
 }
 
 .projects .card {
@@ -129,7 +175,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -154,6 +199,10 @@ nav {
   display: flex;
 }
 
+.skills-carousel-item img {
+  margin-bottom: 0.5rem;
+}
+
 .skills-carousel-btn {
   color: #fff;
   border: none;
@@ -162,6 +211,7 @@ nav {
   height: 40px;
   font-size: 1.5rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   margin: 0 0.5rem;
@@ -295,7 +345,7 @@ footer {
   }
 
   .hero-section {
-    min-height: 915px;
+    min-height: 630px;
   }
 
   .skills-carousel-item {

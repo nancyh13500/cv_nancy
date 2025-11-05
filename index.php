@@ -8,7 +8,7 @@ require_once __DIR__ . '/header.php';
   <div class="container">
     <h1 class="name display-4 fw-bold">Nancy HANOYAN</h1>
     <h3 class="lead">Développeur web et web mobile full stack</h3>
-    <a href="#projects" class="btn btn-projects btn-light mt-3">Découvrir mes projets</a>
+    <a href="#projects" class="btn btn-projects btn-light mt-4">Découvrir mes projets</a>
     <div class="cv mt-4">
       <a href="cv/cv nancy.pdf" class="btn btn-cv btn-light" target="_blank">Télécharger mon CV</a>
     </div>
@@ -20,7 +20,7 @@ require_once __DIR__ . '/header.php';
 <section class="presentation" id="presentation">
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6"> <class="d-block mx-lg-auto img-fluid w-100 alt="" width="400" height="200" loading="lazy"> </div>
+      <div class="col-10 col-sm-8 col-lg-6"> <img class="d-block mx-lg-auto img-fluid w-100" alt="" width="400" height="200" loading="lazy"> </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A propos de moi</h1>
         <p class="lead">En reconversion professionnelle de développeur web et web mobile, vous trouverez les projets que j'ai fait durant cette formation.
@@ -30,6 +30,12 @@ require_once __DIR__ . '/header.php';
         </div>
       </div>
     </div>
+    <div class="img-nh">
+      <div class="col-4">
+        <img src="/assets/img/logo nh.jpg" alt="logo">
+      </div>
+    </div>
+  </div>
 
 </section>
 
@@ -39,7 +45,7 @@ require_once __DIR__ . '/header.php';
     <h2 class="text-center mb-5">Mes projets</h2>
     <div class="row g-4 justify-content-center ms-1 me-1">
       <div class="col-md-4">
-        <a href="http://127.0.0.1:5501/index.html" target="_blank" class="text-decoration-none">
+        <a href="http://web-agency/" target="_blank" class="text-decoration-none">
           <div class="card h-100 text-center">
             <img src="assets/img/logo.png" class="card-img-top mx-auto mt-3" alt="WebAgency">
             <div class="card-body">
@@ -49,7 +55,7 @@ require_once __DIR__ . '/header.php';
         </a>
       </div>
       <div class="col-md-4">
-        <a href="http://checkit/" target="_blank" class="text-decoration-none">
+        <a href="http://studi-checkit/" target="_blank" class="text-decoration-none">
           <div class="card h-100 text-center">
             <img src="assets/img/logo-checkit.png" class="card-img-top mx-auto mt-3" alt="Checkit">
             <div class="card-body">
