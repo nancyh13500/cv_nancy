@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/header.php';
+require_once __DIR__ . '/templates/header.php';
 ?>
 
 
@@ -18,21 +18,18 @@ require_once __DIR__ . '/header.php';
 
 <!-- Section presentation -->
 <section class="presentation" id="presentation">
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6"> <img class="d-block mx-lg-auto img-fluid w-100" alt="" width="400" height="200" loading="lazy"> </div>
-      <div class="col-lg-6">
+  <div class="container px-4 py-5">
+    <div class="row flex-lg-row align-items-start g-5 py-5">
+      <div class="col-md-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A propos de moi</h1>
-        <p class="lead">En reconversion professionnelle de développeur web et web mobile, vous trouverez les projets que j'ai fait durant cette formation.
-          Projets auxquels j'ai appris ce métier passionnant et complet.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <p class="pt-5">En reconversion professionnelle de développeur web et web mobile, vous trouverez les projets que j'ai fait durant cette formation.
+          Projets auxquels j'ai appris ce métier passionnant et complet. Je reste à votre disposition pour un éventuel projet à réaliser pour vous.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
           <a href="/cv/cv nancy.pdf" type="button" class="btn bg-dark text-white btn-lg px-4 me-md-2" target="_blank">Télécharger mon CV</a>
         </div>
       </div>
-    </div>
-    <div class="img-nh">
-      <div class="col-4">
-        <img src="/assets/img/logo nh.jpg" alt="logo">
+      <div class="col-md-6">
+        <img src="assets/img/logo nh.jpg" alt="logo" class="img-fluid d-block mx-auto logo-nh">
       </div>
     </div>
   </div>
@@ -45,7 +42,7 @@ require_once __DIR__ . '/header.php';
     <h2 class="text-center mb-5">Mes projets</h2>
     <div class="row g-4 justify-content-center ms-1 me-1">
       <div class="col-md-4">
-        <a href="http://web-agency/" target="_blank" class="text-decoration-none">
+        <a href="pages/webagency.php" class="text-decoration-none">
           <div class="card h-100 text-center">
             <img src="assets/img/logo.png" class="card-img-top mx-auto mt-3" alt="WebAgency">
             <div class="card-body">
@@ -55,7 +52,7 @@ require_once __DIR__ . '/header.php';
         </a>
       </div>
       <div class="col-md-4">
-        <a href="http://studi-checkit/" target="_blank" class="text-decoration-none">
+        <a href="pages/studi-checkit.php" class="text-decoration-none">
           <div class="card h-100 text-center">
             <img src="assets/img/logo-checkit.png" class="card-img-top mx-auto mt-3" alt="Checkit">
             <div class="card-body">
@@ -117,5 +114,5 @@ require_once __DIR__ . '/header.php';
 </section>
 
 <?php
-require_once __DIR__ . '/footer.php';
+require_once __DIR__ . '/templates/footer.php';
 ?>
