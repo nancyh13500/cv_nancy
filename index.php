@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/header.php';
+require_once __DIR__ . '/templates/header.php';
 ?>
 
 
@@ -42,9 +42,9 @@ require_once __DIR__ . '/header.php';
     <h2 class="text-center mb-5">Mes projets</h2>
     <div class="row g-4 justify-content-center ms-1 me-1">
       <div class="col-md-4">
-        <a href="http://localhost/web-agency/" target="_blank" class="text-decoration-none">
+        <a href="pages/webagency.php" class="text-decoration-none">
           <div class="card h-100 text-center">
-            <img src="assets/img/logo.png" class="card-img-top mx-auto mt-3" alt="WebAgency">
+            <img src="assets/img/logo.png" class="card-img-top project-card-logo mx-auto mt-3" alt="WebAgency">
             <div class="card-body">
               <p class="card-text">L'agence de tous vos projets et en tout liberté.</p>
             </div>
@@ -52,11 +52,21 @@ require_once __DIR__ . '/header.php';
         </a>
       </div>
       <div class="col-md-4">
-        <a href="http://studi-checkit/" target="_blank" class="text-decoration-none">
+        <a href="pages/studi-checkit.php" class="text-decoration-none">
           <div class="card h-100 text-center">
-            <img src="assets/img/logo-checkit.png" class="card-img-top mx-auto mt-3" alt="Checkit">
+            <img src="assets/img/logo-checkit.png" class="card-img-top project-card-logo mx-auto mt-3" alt="Checkit">
             <div class="card-body">
               <p class="card-text">Gérer vos "To do list"</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="pages/ecoride.php" class="text-decoration-none">
+          <div class="card h-100 text-center">
+            <img src="assets/img/ecoride.png" class="card-img-top project-card-logo mx-auto mt-3" alt="Ecoride">
+            <div class="card-body">
+              <p class="card-text">Ecoride</p>
             </div>
           </div>
         </a>
@@ -114,5 +124,5 @@ require_once __DIR__ . '/header.php';
 </section>
 
 <?php
-require_once __DIR__ . '/footer.php';
+require_once __DIR__ . '/templates/footer.php';
 ?>

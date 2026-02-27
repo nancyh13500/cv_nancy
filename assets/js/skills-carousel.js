@@ -25,12 +25,25 @@ document.addEventListener('DOMContentLoaded', function () {
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
       label: 'SQL',
     },
+    {
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+      label: 'DOCKER',
+    },
+    {
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+      label: 'MONGODB',
+    },
+    {
+      img: 'https://cdn.simpleicons.org/portainer/13BEF9',
+      label: 'PORTAINER',
+    },
   ];
 
   const carousel = document.querySelector('.skills-carousel');
   const prevBtn = document.getElementById('skills-prev');
   const nextBtn = document.getElementById('skills-next');
   let currentIndex = 0;
+  let direction = 1; // 1 = vers la droite, -1 = vers la gauche
   let autoSlideInterval = null;
   let autoSlideTimeout = null;
 
@@ -51,41 +64,73 @@ document.addEventListener('DOMContentLoaded', function () {
     return 3;
   }
 
+  function getMaxIndex() {
+    return Math.max(skills.length - getVisibleCount(), 0);
+  }
+
   function updateCarousel() {
     const items = carousel.querySelectorAll('.skills-carousel-item');
     const visibleCount = getVisibleCount();
     items.forEach((item, i) => {
       item.style.display = (i >= currentIndex && i < currentIndex + visibleCount) ? 'flex' : 'none';
     });
-    prevBtn.disabled = currentIndex === 0;
-    nextBtn.disabled = currentIndex + visibleCount >= skills.length;
+    const canSlide = skills.length > visibleCount;
+    prevBtn.disabled = !canSlide;
+    nextBtn.disabled = !canSlide;
   }
 
   function nextSlide() {
-    const visibleCount = getVisibleCount();
-    if (currentIndex + visibleCount < skills.length) {
-      currentIndex += visibleCount;
+    const maxIndex = getMaxIndex();
+    if (currentIndex < maxIndex) {
+      currentIndex += 1;
+      direction = 1;
     } else {
+      // Arrivé à droite : retour au début si on clique sur "suivant"
       currentIndex = 0;
+      direction = 1;
     }
     updateCarousel();
   }
 
   function prevSlide() {
-    const visibleCount = getVisibleCount();
     if (currentIndex > 0) {
-      currentIndex -= visibleCount;
-      if (currentIndex < 0) currentIndex = 0;
+      currentIndex -= 1;
+      direction = -1;
     } else {
-      // Optionnel : revenir à la fin si on clique sur "précédent" au début
-      currentIndex = Math.max(skills.length - visibleCount, 0);
+      // Arrivé à gauche : on repart immédiatement dans l'autre sens
+      direction = 1;
+      const maxIndex = getMaxIndex();
+      if (maxIndex > 0) currentIndex += 1;
     }
+    updateCarousel();
+  }
+
+  function autoSlide() {
+    const maxIndex = getMaxIndex();
+    if (maxIndex === 0) return;
+
+    if (direction === 1) {
+      if (currentIndex < maxIndex) {
+        currentIndex += 1;
+      } else {
+        direction = -1;
+        currentIndex -= 1;
+      }
+    } else {
+      if (currentIndex > 0) {
+        currentIndex -= 1;
+      } else {
+        direction = 1;
+        currentIndex += 1;
+      }
+    }
+
     updateCarousel();
   }
 
   function startAutoSlide() {
     stopAutoSlide();
-    autoSlideInterval = setInterval(nextSlide, 5000);
+    autoSlideInterval = setInterval(autoSlide, 3000);
   }
 
   function stopAutoSlide() {
@@ -110,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   window.addEventListener('resize', function () {
-    currentIndex = 0;
+    currentIndex = Math.min(currentIndex, getMaxIndex());
+    direction = 1;
     updateCarousel();
     resetAutoSlide();
   });

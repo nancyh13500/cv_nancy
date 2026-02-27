@@ -10,11 +10,19 @@
     </footer>
 </section>
 
+<?php
+// Calcul du chemin de base relatif
+$basePath = (strpos($_SERVER['PHP_SELF'], '/pages/') !== false) ? '../' : '';
+$indexJsVersion = filemtime(__DIR__ . '/../assets/js/index.js');
+$skillsJsVersion = filemtime(__DIR__ . '/../assets/js/skills-carousel.js');
+$navJsVersion = filemtime(__DIR__ . '/../assets/js/nav.js');
+?>
 <script src="https://kit.fontawesome.com/25645a0adc.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/index.js"></script>
-<script src="/assets/js/skills-carousel.js"></script>
-<script src="/assets/js/nav.js"></script>
+<script src="<?php echo $basePath; ?>assets/js/index.js?v=<?php echo $indexJsVersion; ?>"></script>
+<script src="<?php echo $basePath; ?>assets/js/skills-carousel.js?v=<?php echo $skillsJsVersion; ?>"></script>
+<script src="<?php echo $basePath; ?>assets/js/nav.js?v=<?php echo $navJsVersion; ?>"></script>
 </body>
 
 </html>
+

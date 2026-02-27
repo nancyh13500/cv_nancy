@@ -47,7 +47,7 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: url('/assets/img/workspace.jpg') center/cover;
+  background: url('../img/workspace.jpg') center/cover;
   color: white;
   position: relative;
 }
@@ -187,6 +187,25 @@ nav {
 
 .projects .card-img-top {
   width: 70%;
+}
+
+.projects .project-card-logo {
+  height: 130px;
+  object-fit: contain;
+}
+
+.projects .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .card-body .card-text {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
 }
 
 /*end section projects*/
